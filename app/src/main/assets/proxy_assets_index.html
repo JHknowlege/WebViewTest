@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+
+        function showPerson() {
+            var person = {
+                name: "xhh",
+                age: 18
+            }
+            JS.showPerson(person)
+        }
+        function showToast() {
+            LoadAssetsActivity.showToast('js调用安卓方法！')
+        }
+
+
+        function callJs(param) {
+            return 'callJs result'
+        }
+
+    </script>
+
+</head>
+
+
+<body>
+    <button id="showToastBtn" onclick="showToast()">显示Toast</button>
+    <button id="showPersonBtn" onclick="showPerson()">调用android</button>
+</body>
+
+</html>

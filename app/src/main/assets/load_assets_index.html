@@ -1,0 +1,18 @@
+<html>
+<head >
+    <meta charset="UTF-8"/>
+    <script type="text/javascript">
+
+        function callJs(param){
+            return "hello from js ,access is "+param
+        }
+        function callAndroid(){
+            LoadAssetsActivity.helloFromJs('js调用安卓方法！')
+        }
+    </script>
+
+</head>>
+<body>
+<button id="click_btn" onclick="callAndroid()">调用android</button>
+</body>
+</html>
